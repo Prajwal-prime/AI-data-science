@@ -1,0 +1,31 @@
+def chatbot():
+    print("Hello! How are you feeling today?")
+
+
+    mood = input("Enter your mood (happy, sad, angry, excited): ").lower()
+
+    if mood == "happy":
+        print("That's wonderful! What made you so happy?")
+        reason = input()
+        print(f"That sounds amazing! I'm glad {reason} brought you happiness.")
+    elif mood == "sad":
+        print("I'm sorry to hear that. Do you want to share why you're feeling sad?")
+        reason = input()
+        print(f"I'm here for you. It sounds like {reason} is weighing on you. Things will get better.")
+    elif mood == "angry":
+        print("It's okay to feel angry sometimes. What's making you feel this way?")
+        reason = input()
+        print(f"I understand. {reason} can be really frustrating. Take a deep breath; it helps.")
+    elif mood == "excited":
+        print("Wow, excitement is contagious! What's got you so thrilled?")
+        reason = input()
+        print(f"That sounds fantastic! I hope {reason} turns out just as amazing as you expect!")
+    else:
+        print("Hmm, that's an interesting mood. Want to tell me more about it?")
+        reason = input()
+        print(f"Thanks for sharing! It's okay to feel {mood}. I'm here to listen.")
+
+    print("Thanks for chatting with me. Take care!")
+
+if __name__ == "__main__":
+    chatbot()
